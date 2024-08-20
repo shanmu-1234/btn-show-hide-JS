@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="password" id="psd">
+    <button id="btn" onclick="ssv()">show</button>
+    <script>
+        function ssv(){
+            let a = document.getElementById("psd")
+            let b = document.getElementById("btn")
+            if(a.type==="password"){
+                a.type = "text";
+                b.textContent = "Hide";
+            }
+            else{
+                a.type = "password";
+                b.textContent = "Show";
+            }
+        }
+    </script>
+</body>
+</html>
